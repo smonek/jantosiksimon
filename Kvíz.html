@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+  <title>Kvíz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('./img/Kvíz.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm alert alert-warning">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-success" href="./Menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-success" href="./Flanagan.html">John Flanagan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-success" href="./Paolini.html">Christopher Paolini</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-success" href="./Riordan.html">Rick Riordan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-success" href="./Kvíz.html">Kvíz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-success" href="./dotazník.html">dotazník</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-success" href="./hodnocení.html">hodnocení</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="bg-warning p-3">
+    <h1 class="display-4 text-success text-center text-uppercase">Závěrečný kvíz</h1>
+  </header>
+  <main>
+    <div class="container alert alert-warning pt-2 pb-2 border">
+      <form>
+        <div class="mb-3 row">
+          <label for="série" class="col-sm-3 col-form-label">Kdo napsal sérii Hraničářův učeň?</label>
+          <div class="col-sm-9 p-3">
+            <select class="form-control" name="série" id="série">
+              <option value="JF">John Flanagan</option>
+              <option value="CHP">Christopher Paolini</option>
+              <option value="RR">Rick Riordan</option>
+            </select>
+          </div>
+          <div id="série-odpoved" class="alert alert-success collapse">
+            John Flanagan
+          </div>
+          <label for="osoba" class="col-sm-3 col-form-label">Kdo je na obrázku?</label>
+          <div class="col-sm-9 p-3">
+            <img src="./img/Paolini.jpg" class="rounded">
+            <select class="form-control" name="osoba" id="osoba">
+              <option value="JF">John Flanagan</option>
+              <option value="CHP">Christopher Paolini</option>
+              <option value="RR">Rick Riordan</option>
+            </select>
+          </div>
+          <div class="mb-3 row">
+            <label for="série" class="col-sm-3 col-form-label">Který spisovatel pracoval 15 let jako učitel a dostal
+              mnoho ocenění?</label>
+            <div class="col-sm-9 p-3">
+              <select class="form-control" name="série" id="série">
+                <option value="JF">John Flanagan</option>
+                <option value="CHP">Christopher Paolini</option>
+                <option value="RR">Rick Riordan</option>
+              </select>
+            </div>
+            <div id="osoba-odpoved" class="alert alert-success collapse">
+              Rick Riordan
+            </div>
+            <label for="bydliště" class="col-sm-3 col-form-label">Kdo žil na Aljašce?</label>
+            <div class="col-sm-9 p-3">
+              <select class="form-control" name="bydliště" id="bydliště">
+                <option value="JF">John Flanagan</option>
+                <option value="CHP">Christopher Paolini</option>
+                <option value="RR">Rick Riordan</option>
+              </select>
+            </div>
+            <div id="bydliště-odpoved" class="alert alert-success collapse">
+              John Flanagan
+            </div>
+            <label for="důvod" class="col-sm-3 col-form-label">Proč začal Flanagan psát?</label>
+            <div class="col-sm-9 p-3">
+              <select class="form-control" name="důvod" id="důvod">
+                <option value="ZR">Z radosti</option>
+                <option value="KP">Kvůli penězům</option>
+                <option value="KS">Pro svého syna</option>
+                <option value="MH">Měl dost času</option>
+              </select>
+            </div>
+            <div id="důvod-odpoved" class="alert alert-success collapse">
+              Pro svého syna
+            </div>
+            <label for="datum" class="col-sm-3 col-form-label">Kdy se narodil John Flanagan</label>
+            <div class="col-sm-9 p-3">
+              <input type="date" class="form-control" name="narozeni" id="narozeni">
+            </div>
+            <div id="datum-odpoved" class="alert alert-success collapse">
+              22.05.1944
+            </div>
+            <div class="mb-3 row">
+              <label for="série" class="col-sm-3 col-form-label">Od jakého spisovatele jsem začal číst knihy jako první?</label>
+              <div class="col-sm-9 p-3">
+                <select class="form-control" name="série" id="série">
+                  <option value="JF">John Flanagan</option>
+                  <option value="CHP">Christopher Paolini</option>
+                  <option value="RR">Rick Riordan</option>
+                </select>
+              </div>
+              <div id="datum-odpoved" class="alert alert-success collapse">
+                John Flanagan
+              </div>
+              <label for="důvod" class="col-sm-3 col-form-label">Líbily se ti moje stránky?</label>
+              <div class="col-sm-9 p-3">
+                <select class="form-control" name="důvod" id="důvod">
+                  <option value="A">ano</option>
+                  <option value="R">rozhodně</option>
+                  <option value="DN">dobrý no</option>
+                  <option value="A">asi</option>
+                </select>
+              </div>
+              <div id="důvod-odpoved" class="alert alert-success collapse">
+                NE
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="offset-sm-3 col-sm-9">
+              <button type="button" data-bs-toggle="collapse" data-bs-target=".alert-success"
+                class="btn btn-success">Správná
+                odpověď</button>
+            </div>
+          </div>
+      </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
