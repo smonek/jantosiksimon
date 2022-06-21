@@ -76,7 +76,7 @@
             <label for="série" class="col-sm-3 col-form-label">Který spisovatel pracoval 15 let jako učitel a dostal
               mnoho ocenění?</label>
             <div class="col-sm-9 p-3">
-              <select class="form-control" name="série" id="série">
+              <select class="form-control" name="série" id="postava">
                 <option value="JF">John Flanagan</option>
                 <option value="CHP">Christopher Paolini</option>
                 <option value="RR">Rick Riordan</option>
@@ -116,27 +116,28 @@
               22.05.1944
             </div>
             <div class="mb-3 row">
-              <label for="série" class="col-sm-3 col-form-label">Od jakého spisovatele jsem začal číst knihy jako první?</label>
+              <label for="série" class="col-sm-3 col-form-label">Od jakého spisovatele jsem začal číst knihy jako
+                první?</label>
               <div class="col-sm-9 p-3">
-                <select class="form-control" name="série" id="série">
+                <select class="form-control" name="série" id="datum">
                   <option value="JF">John Flanagan</option>
                   <option value="CHP">Christopher Paolini</option>
                   <option value="RR">Rick Riordan</option>
                 </select>
               </div>
-              <div id="datum-odpoved" class="alert alert-success collapse">
+              <div id="jmeno-odpoved" class="alert alert-success collapse">
                 John Flanagan
               </div>
               <label for="důvod" class="col-sm-3 col-form-label">Líbily se ti moje stránky?</label>
               <div class="col-sm-9 p-3">
-                <select class="form-control" name="důvod" id="důvod">
+                <select class="form-control" name="důvod" id="hodnoceni">
                   <option value="A">ano</option>
                   <option value="R">rozhodně</option>
                   <option value="DN">dobrý no</option>
                   <option value="A">asi</option>
                 </select>
               </div>
-              <div id="důvod-odpoved" class="alert alert-success collapse">
+              <div id="hodnoceni-odpoved" class="alert alert-success collapse">
                 NE
               </div>
             </div>
@@ -148,7 +149,9 @@
                 odpověď</button>
             </div>
           </div>
+        </div>
       </form>
+    </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
